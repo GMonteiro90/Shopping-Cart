@@ -1,0 +1,16 @@
+body {
+    color:#9ca3af;
+    background-color: #16171d;
+}
+
+.headerContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.headerContainer p{
+    cursor: pointer;
+}
