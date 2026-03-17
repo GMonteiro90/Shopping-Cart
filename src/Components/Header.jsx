@@ -1,9 +1,11 @@
+import { Link } from "react-router";
+
 function Header() {
     return (
         <div className="headerContainer">
-            <p className="headerItem">Home</p>
-            <p className="headerItem">Shop</p>
-            <p className="headerItem">Cart</p>
+            <Link to="/">Home</Link>
+            <Link to="shop">Shop</Link>
+            <Link to="cart">Cart</Link>
         </div>
     );
 };

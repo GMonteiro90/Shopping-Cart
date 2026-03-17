@@ -1,40 +1,23 @@
-import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router";
 import Header from "./Components/Header";
-import './App.css'
+import "./App.css";
+import Home from "./Pages/Home";
+import Shop from "./Pages/Shop";
+import Cart from "./Pages/Cart";
 
 function App() {
-    const [shopItemsList, setItemsShopList] = useState([]);
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            const response = await fetch('https://fakestoreapi.com/products');
-            const data = await response.json();
-            console.log(data);
-
-            return {
-                id: data.id,
-                name: data.title,
-                price: data.price,
-                description: data.descrption,
-                image: data.image,
-            }
-        };
-        fetchProducts();
-    }, []);
-
-
-    return (
-        <div className="mainContainer">
-            <div className="header">
-                <Header></Header>
-            </div>
-            <div className="shopItems">
-                {}
-            </div>
-
-        </div>
-    )
-
+	return (
+		<div>
+            <BrowserRouter>
+            <Header/>
+                <Routes>
+                    <Route path="/" element={<Home/>} />
+                    <Route path="shop" element={<Shop/>} />
+                    <Route path="cart" element={<Cart/>} />
+                </Routes>
+            </BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

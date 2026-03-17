@@ -1,6 +1,6 @@
 body {
     background-color: #363636;
-    color: #921515;
+    color: #333;
 }
 
 .mainContainer {
@@ -15,10 +15,6 @@ body {
     margin-bottom: 40px;
     border-bottom: 1px solid #eee;
     color: white;
-}
-
-p {
-    color: aquamarine;
 }
 
 .headerItem {
