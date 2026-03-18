@@ -1,6 +1,5 @@
 body {
-    background-color: #363636;
-    color: #921515;
+    background-color: #d8d2cd;
 }
 
 .mainContainer {
@@ -15,10 +14,6 @@ body {
     margin-bottom: 40px;
     border-bottom: 1px solid #eee;
     color: white;
-}
-
-p {
-    color: aquamarine;
 }
 
 .headerItem {
@@ -52,4 +47,8 @@ p {
     height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
+}
+
+.product-card p {
+    align-self: flex-end;
 }
