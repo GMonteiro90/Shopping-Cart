@@ -8,18 +8,6 @@ body {
     padding: 20px;
 }
 
-.headerContainer {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
-    color: white;
-}
-
-.headerItem {
-    cursor: pointer;
-}
-
 .shopItems {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

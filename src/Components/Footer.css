@@ -1,0 +1,7 @@
+.footerMainContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  background-color: #f4f4f4;
+  height: var(--footerheight)
+}

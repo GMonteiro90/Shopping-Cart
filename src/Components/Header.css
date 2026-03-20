@@ -1,0 +1,51 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  height: var(--navheight);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  color: white;
+}
+
+.headerContainer button {
+  background: none;
+  border: none;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  color: #1a1a1a;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.headerContainer a:first-child button {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}
+
+.headerContainer button:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #1a1a1a;
+  transition: width .3s;
+}
+
+.headerContainer button:hover:after {
+  width: 100%;
+}
+
+.headerItem {
+  cursor: pointer;
+}
